@@ -33,7 +33,7 @@ const Dashboard = () => {
     // ----------------------------
 
     setTimeout(() => {
-      axios.get("http://localhost:8000/login-counter")
+      axios.get("https://fitmyself-be.vercel.app/")
         .then((response) => {
           // Handle the retrieved loginCounter value
           console.log(response.data); // Assuming loginCounter is returned as response.data
@@ -49,7 +49,7 @@ const Dashboard = () => {
     // ----------------------------
 
     setTimeout(() => {
-      axios.get("http://localhost:8000/fetch-data").then((response) => {
+      axios.get("https://fitmyself-be.vercel.app/").then((response) => {
         // Handle the retrieved data
         //  console.log(response.data);
         setFitnessData(response.data);
